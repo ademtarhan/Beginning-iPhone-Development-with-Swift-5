@@ -16,3 +16,4 @@
 * AVKit player View Controller – Displays a view for displaying video on the screen
 
 
+![329781_5_En_5_Fig6_HTML](https://user-images.githubusercontent.com/72447691/183287256-40779297-5733-4414-9353-2acc4f5c3294.jpg)
