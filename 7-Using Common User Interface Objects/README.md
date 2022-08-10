@@ -109,14 +109,17 @@ Click the ViewController.swift file in the Navigator pane.
  
 7.	
 Add the following inside the viewDidLoad method:
+
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
 
 8.	
 Add the following inside the viewDidLoad method :
+
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
         view.addGestureRecognizer(tap)
 This code allows the view to detect tap gestures (when the user taps outside of a text field). When this occurs, this line runs a function called dismissKeyboard . The entire viewDidLoad function should look like this:
+
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
@@ -194,7 +197,8 @@ Click the Run button or choose Product ➤ Run. The Simulator appears, displayin
 
 13.
 ![329781_5_En_7_Fig19_HTML](https://user-images.githubusercontent.com/72447691/183838974-582fd3b7-e84d-4b65-b765-b3dab93327de.jpg)
-The virtual keyboard appears when the user clicks in a text field
+
+-->The virtual keyboard appears when the user clicks in a text field
 
 14.	
 Click the keys on the virtual keyboard to type a word in the text field.
@@ -212,29 +216,36 @@ Choose Simulator ➤ Quit Simulator to return to Xcode.
 *Defining Different Keyboards
 
 ![329781_5_En_7_Fig20_HTML](https://user-images.githubusercontent.com/72447691/183839131-8581009b-65da-4b1d-9142-6d52d66093d5.jpg)
-A numeric virtual keyboard
+
+-->A numeric virtual keyboard
 
 ![329781_5_En_7_Fig21_HTML](https://user-images.githubusercontent.com/72447691/183839230-fc5d2dd6-44f4-4301-882f-190cb08a54fa.jpg)
-Choosing different virtual keyboards to appear
+
+-->Choosing different virtual keyboards to appear
 
 ![329781_5_En_7_Fig22_HTML](https://user-images.githubusercontent.com/72447691/183839274-75ffac2d-2417-4c52-a593-35be579c2d94.jpg)
-The Numbers and Punctuation virtual keyboard
+
+-->The Numbers and Punctuation virtual keyboard
 
 
 
 *Defining the Content of a Text Field
 
 ![329781_5_En_7_Fig23_HTML](https://user-images.githubusercontent.com/72447691/183839359-85fe3d73-c1a4-438c-8f1d-1a515875e070.jpg)
-The Text Input Traits category on the Attributes Inspector pane
+
+-->The Text Input Traits category on the Attributes Inspector pane
 
 ![329781_5_En_7_Fig24_HTML](https://user-images.githubusercontent.com/72447691/183839432-d02345ff-814e-4182-b368-eee17a6acda5.jpg)
-Changing the content type of a text field to Password
+
+-->Changing the content type of a text field to Password
 
 ![329781_5_En_7_Fig25_HTML](https://user-images.githubusercontent.com/72447691/183839483-f823749c-b85f-4418-b661-3001f02d1506.jpg)
-Masking typed characters in a text field
+
+-->Masking typed characters in a text field
 
 ![329781_5_En_7_Fig26_HTML](https://user-images.githubusercontent.com/72447691/183839536-0cfd1704-89cd-4bf9-ab2a-2deda80dab98.jpg)
-Displaying a virtual keyboard with a Send return key
+
+-->Displaying a virtual keyboard with a Send return key
 
 *Modifying the Appearance of a Text Field
 
@@ -280,7 +291,8 @@ Displaying a virtual keyboard with a Send return key
 #Using Buttons
 
 ![329781_5_En_7_Fig27_HTML](https://user-images.githubusercontent.com/72447691/183839807-ca30f4b4-e56f-4899-a7e0-6e09299528d0.jpg)
-Ctrl-dragging to create an IBAction method for the button
+
+-->Ctrl-dragging to create an IBAction method for the button
 
     @IBAction func displayPassword(_ sender: UIButton) {
     }
