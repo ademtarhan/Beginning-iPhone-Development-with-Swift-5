@@ -124,8 +124,7 @@ Making a text view editable
 NoteWhen assigning a value to a variable, you use a single (=) equal sign, but when comparing two values, you use a double equal sign (==).
 --
 
----
-
+'''
   import UIKit
   class ViewController: UIViewController {
       @IBOutlet var textView: UITextView!
@@ -142,4 +141,4 @@ NoteWhen assigning a value to a variable, you use a single (=) equal sign, but w
           }
       }
   }
-
+'''
