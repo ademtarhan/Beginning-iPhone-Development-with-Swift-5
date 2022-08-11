@@ -201,10 +201,15 @@ Modifying a Slider with Swift Code
 --
 
 *.value – Defines the initial value displayed by the slider
+
 *.minimumValue – Defines the minimum value the slider can represent
+
 *.maximumValue – Defines the maximum value the slider can represent
+
 *.thumbTintColor – Defines the color of the thumb on the slider
+
 *.minimumTrackTintColor – Defines the color of the minimum track
+
 *.maximumTrackTintColor – Defines the color of the maximum track
 
 To see how to use Swift code to modify a slider, follow these steps:
