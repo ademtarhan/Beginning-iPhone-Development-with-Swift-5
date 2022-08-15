@@ -29,22 +29,23 @@ Understanding Events
 *Through Swift code
 
 ![329781_5_En_10_Fig2_HTML](https://user-images.githubusercontent.com/72447691/184630810-6358187a-eb30-4d1a-963f-03e24754ffe0.jpg)
+
 ->Changing the title of a button in the Attributes Inspector
 
 ![329781_5_En_10_Fig3_HTML](https://user-images.githubusercontent.com/72447691/184630840-736df62e-e345-44fe-933b-788de6c67530.jpg)
+
 ->The Event popup menu displays Touch Up Inside by default for buttons
 
 Edit this touchInside IBAction method as follows:
 
 
 
+''' 
 
-
-
-''' swift
   @IBAction func touchInside(_ sender: UIButton) {
         buttonObject.setTitle("New", for: UIControl.State.normal)
     }
+    
 '''
 
 
